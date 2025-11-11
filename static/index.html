@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detector</title>
+    
+    <!-- 1. Load Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 2. Load React & ReactDOM (the 'engine' for the UI) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js"></script>
+    
+    <!-- 3. Load Babel (to 'translate' JSX into plain JavaScript) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.0/babel.min.js"></script>
+    
+    <!-- 4. Load ONNX.js (the 'engine' for the AI model) -->
+    <!-- This provides the 'window.ort' object -->
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    
+</head>
+<body class="bg-gray-100">
+
+    <!-- This is the 'root' container where our React app will be injected. -->
+    <div id="root"></div>
+
+    <!-- 
+      5. Load our React App Script
+         We MUST set type="text/babel" so Babel knows to translate this file.
+         The 'data-plugins' attribute helps Babel handle new features.
+    -->
+    <script type="text/babel" data-plugins="transform-react-jsx" src="./plant_disease_detector.jsx"></script>
+    
+</body>
+</html>
