@@ -1,24 +1,24 @@
-#Full-Stack AI Plant Disease Detector
+# Full-Stack AI Plant Disease Detector
 
 A web application that uses on-device AI for real-time plant disease detection and a secure backend to provide AI-generated treatment plans.
 
-##🌟 Key Features
+## 🌟 Key Features
 
-Fast, In-Browser AI: Uses ONNX.js to run a trained PyTorch (MobileNetV2) model directly in the user's browser. No server-side GPU is needed for detection.
+**Fast, In-Browser AI:** Uses ONNX.js to run a trained PyTorch (MobileNetV2) model directly in the user's browser. No server-side GPU is needed for detection.
 
-High-Accuracy Diagnosis: Built using Transfer Learning on the 38-class PlantVillage dataset to achieve high-confidence predictions.
+**High-Accuracy Diagnosis:** Built using Transfer Learning on the 38-class PlantVillage dataset to achieve high-confidence predictions.
 
-AI-Powered Treatment Plans: Securely calls the Gemini API from a Flask backend to provide actionable, step-by-step treatment advice for the detected disease.
+**AI-Powered Treatment Plans:** Securely calls the Gemini API from a Flask backend to provide actionable, step-by-step treatment advice for the detected disease.
 
-Secure & Scalable: All API keys are hidden in a .env file on the backend. The app is served as a single, monolithic Flask application, making it easy to deploy.
+**Secure & Scalable:** All API keys are hidden in a .env file on the backend. The app is served as a single, monolithic Flask application, making it easy to deploy.
 
-Fully Responsive: Built with Tailwind CSS (via CDN) for a clean, mobile-first user interface.
+**Fully Responsive:** Built with Tailwind CSS (via CDN) for a clean, mobile-first user interface.
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 This project is a full-stack monolithic application.
 
-###Frontend (In-Browser):
+### Frontend (In-Browser):
 
 **React:** For the dynamic user interface (loaded via CDN).
 
@@ -28,13 +28,13 @@ This project is a full-stack monolithic application.
 
 **Babel (in-browser):** To transpile the JSX for development.
 
-###Backend (Server-Side):
+### Backend (Server-Side):
 
 **Flask:** A Python web server that serves both the React frontend and the secure backend API.
 
 **Gunicorn:** A production-ready web server (for deployment).
 
-###Artificial Intelligence:
+### Artificial Intelligence:
 
 **PyTorch:** Used to train and fine-tune the MobileNetV2 model (see train.py).
 
