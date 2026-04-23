@@ -3,13 +3,11 @@ import requests  # For calling Gemini
 from flask import Flask, request, jsonify, send_from_directory 
 from dotenv import load_dotenv 
 
-
 # --- NEW: Load environment variables ---
 load_dotenv()
 
 # Initialize the Flask app
 app = Flask(__name__, static_folder='static')
-
 
 # --- API Route (Stays the Same) ---
 @app.route('/api/get_treatment', methods=['POST'])
